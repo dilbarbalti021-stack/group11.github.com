@@ -3,14 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Post Lab 7 Website</title>
+    <title>Post Lab 7 - Group Members</title>
+    
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #333; }
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .member-card {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-card h2 {
+            margin-top: 10px;
+            color: #212529;
+            font-size: 1.4em;
+        }
+
+        .role {
+            color: var(--primary-color);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e9ecef;
+            color: #495057;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .sir-mention {
+            font-weight: bold;
+            color: #000;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, World! This is My Lab 7 Project.</h1>
-    <p>My first website is published using GitHub Pages.</p>
+
+    <div class="container">
+        <header>
+            <h1>Post Lab 7 Group Project</h1>
+            <p>Meet the dedicated team for this project!</p>
+        </header>
+
+        <div class="members-grid">
+            
+            <div class="member-card">
+                <h2>Capt Wajahat</h2>
+                <span class="role">Project Lead & UI Architect</span>
+                <p class="description">"Designing intuitive user experience and guiding the team to success."</p>
+            </div>
+
+            <div class="member-card">
+                <h2>Shakeel Ahmed</h2>
+                <span class="role">Backend Integration Specialist</span>
+                <p class="description">"Connecting systems and ensuring robust, smooth data flow."</p>
+            </div>
+
+            <div class="member-card">
+                <h2>Basit Ali</h2>
+                <span class="role">Database Architect & Tester</span>
+                <p class="description">"Ensuring data integrity and rigorous quality assurance."</p>
+            </div>
+
+            <div class="member-card">
+                <h2>Dilshad Ali</h2>
+                <span class="role">Content Creator & Documentation Expert</span>
+                <p class="description">"Crafting clear communication and ensuring excellent project documentation."</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>This project was successfully executed by Group 7.</p>
+        <p class="sir-mention">Guided and Supervised by: Sir Talal Fakhar</p>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
